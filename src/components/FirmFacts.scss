@@ -1,0 +1,244 @@
+/* The entire page container with black background and centered content */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+.container {
+  width: 1680px;
+  height: 1014px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d3e4e;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: url("../components/images/image4.png");
+    // background-size: cover;
+    // background-position: center;
+    // opacity: 0.8;
+    // z-index: 0;
+  }
+}
+
+.header {
+  width: 1510px;
+  height: 150px;
+  //background-color: gray;
+  margin-bottom: 54px;
+}
+
+.line {
+  border-bottom: 1px solid #fff;
+  margin-top: 141px;
+  opacity: 0.2;
+}
+
+.gridBoxes {
+  width: 1510px;
+  height: 662px;
+  display: flex;
+  gap: 17px; // Add gap between mainBox and gridBoxesContainer
+}
+
+.gridBoxesContainer {
+  width: 1128px;
+  height: 662px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.box1 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: -11px;
+}
+.box2 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 7px;
+  margin-top: -11px;
+}
+.box3 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+  margin-left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -11px;
+}
+.box4 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+}
+.box5 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+  margin-top: 0px;
+  margin-left: 7px;
+}
+.box6 {
+  background-color: #fff;
+  width: 364px;
+  height: 322px;
+  margin-top: 0px;
+  margin-left: 13px;
+}
+
+.mainBox {
+  width: 364px;
+  height: 662px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  margin-top: -11px;
+}
+
+.alignBox {
+  display: flex;
+  justify-content: center;
+}
+
+.alignBox2 {
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  position: absolute;
+  width: 285px;
+  height: 66px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 66px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  top: 87px;
+  left: 79px;
+}
+
+.closeIcon {
+  display: flex;
+  width: 1554px;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 50px;
+}
+
+/* Media query for tablet and smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Your styles for screens smaller than or equal to 768px */
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100vw;
+    padding: 10px;
+    background-color: red;
+  }
+
+  .gridBoxesContainer {
+    width: 100vw;
+    height: 662px;
+    display: flex;
+    flex-direction: column;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+  }
+
+  .gridBoxes {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    background-color: green;
+    gap: 0px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #box {
+    width: 100vw;
+    height: auto;
+    position: relative;
+  }
+  .box1 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .box2 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .box3 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .box4 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+  }
+  .box5 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  .box6 {
+    background-color: #fff;
+    width: 100vw;
+    height: 322px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  /* Add more styles for responsiveness */
+}

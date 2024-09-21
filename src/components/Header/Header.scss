@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+.headerTitle {
+  position: absolute;
+  height: 105px;
+  width: 1512px;
+  top: 110px;
+  border-bottom: solid 1px #ffffff33;
+}
+
+.headerTitle h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 60px;
+  margin-top: 9px;
+  letter-spacing: 0.3px;
+  margin-left: -6px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 50px;
+  right: 175px;
+}
+
+@media screen and (max-width: 1679px) {
+  .headerTitle {
+    position: absolute;
+    height: 105px;
+    width: 90%;
+    top: 110px;
+    border-bottom: solid 1px #ffffff33;
+  }
+
+  .headerTitle h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 50px;
+    margin-top: 9px;
+    letter-spacing: 0.3px;
+    margin-left: -6px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 50px;
+    right: 84px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .headerTitle {
+    position: absolute;
+    height: 70px;
+    width: 90%;
+    top: 110px;
+    border-bottom: solid 1px #ffffff33;
+  }
+
+  .headerTitle h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    margin-top: 9px;
+    letter-spacing: 0.3px;
+    margin-left: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 50px;
+    right: 26px;
+  }
+}

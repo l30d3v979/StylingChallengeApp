@@ -1,0 +1,91 @@
+/* Common styles */
+#box,
+.greenButtonContainer,
+.buttonBlue,
+.buttonGreen,
+.rowBtnDown,
+.rowBtnUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box styles */
+#box {
+  width: 364px;
+  height: 322px;
+  position: relative;
+}
+
+#box::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 6px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+/* Button styles */
+.greenButtonContainer {
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.buttonBlue {
+  background-color: #2d3e4e;
+  border: 2px solid #fff;
+}
+
+.buttonBlue:hover,
+.buttonBlue.hovered {
+  background-color: #4a6572;
+}
+
+.buttonGreen {
+  background-color: #4daa55;
+  border: 2px solid #fff;
+}
+
+.buttonGreen:hover,
+.buttonGreen.hovered {
+  background-color: #4daa55;
+}
+
+/* Content styles */
+.contentWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttonText {
+  font-size: 16px;
+}
+
+/* Row button styles */
+.rowBtnDown,
+.rowBtnUp {
+  width: 310px;
+  height: 70px;
+}
+
+.rowBtnDown {
+  margin-top: -157px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Your styles for screens smaller than or equal to 768px */
+  body {
+    font-size: 14px;
+  }
+
+  #box {
+    width: 100vw;
+    height: 322px;
+    position: relative;
+  }
+
+  /* Add more styles for responsiveness */
+}
